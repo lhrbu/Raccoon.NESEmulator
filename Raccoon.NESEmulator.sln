@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raccoon.NESEmulator", "Raccoon.NESEmulator\Raccoon.NESEmulator.csproj", "{5262271C-3620-48D9-8CE7-45CC09C9A937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raccoon.NESEmulator.Test", "Raccoon.NESEmulator.Test\Raccoon.NESEmulator.Test.csproj", "{42E50516-2699-4DF6-B7F4-910AA5AC3EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5262271C-3620-48D9-8CE7-45CC09C9A937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5262271C-3620-48D9-8CE7-45CC09C9A937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5262271C-3620-48D9-8CE7-45CC09C9A937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5262271C-3620-48D9-8CE7-45CC09C9A937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E50516-2699-4DF6-B7F4-910AA5AC3EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E50516-2699-4DF6-B7F4-910AA5AC3EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E50516-2699-4DF6-B7F4-910AA5AC3EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E50516-2699-4DF6-B7F4-910AA5AC3EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4430A8CB-BCF2-4084-B484-C34883F31DF3}
+	EndGlobalSection
+EndGlobal
