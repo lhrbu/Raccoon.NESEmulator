@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Raccoon.Devkits.InterceptProxy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Raccoon.NESEmulator
 {
+    [Interceptor(typeof(CPUExecuteLogInterceptor))]
     public class CPU : ICPU
     {
         private readonly IMapper _ram;

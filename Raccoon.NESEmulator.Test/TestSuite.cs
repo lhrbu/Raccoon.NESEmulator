@@ -12,15 +12,15 @@ namespace Raccoon.NESEmulator.Test
     {
         private readonly ICPU _cpu;
         private readonly IMapper _ram;
-        public TestSuite()
+        public TestSuite(ICPU cpu,IMapper ram)
         {
-            _ram = new Ram64K();
-            _cpu = new CPU(_ram);
+            _cpu = cpu;
+            _ram = ram;
         }
 
         public bool TestQuick()
         {
-            Console.Write("Running general quick tests... ");
+            Console.WriteLine("Running general quick tests... ");
 
             using (FileStream file = new FileStream("quick.bin", FileMode.Open, FileAccess.Read))
                 _ram.Load(file, 0x4000);
@@ -57,7 +57,7 @@ namespace Raccoon.NESEmulator.Test
 
         public bool TestFull()
         {
-            Console.Write("Running general full tests... ");
+            Console.WriteLine("Running general full tests... ");
             //StorePos();
 
             using (FileStream file = new FileStream("full.bin", FileMode.Open, FileAccess.Read))
